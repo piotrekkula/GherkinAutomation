@@ -1,0 +1,215 @@
+	#mainAccordion > .ui-accordion-header {
+		font-size: 11pt;
+		color: #000;
+		font-family: sans-serif;
+		padding-top: 5px;
+	}
+	
+    .ui-widget-header {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #c0c0c0;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        outline: 0;
+    }
+    .ui-state-default {
+        background: transparent;
+        border: none;
+    }
+    .ui-state-active {
+        border: none;
+    }
+  
+	
+	#feature > .ui-accordion .ui-accordion-content{
+		border: 1px 0px 0px 0px;
+	}
+
+    #summary table{
+        font-size: 10pt;
+        text-align: center;
+        font-family: Verdana,Arial,sans-serif;
+        margin-left: 30px;
+    }
+    #summary td{
+        padding-right: 10px; 
+        padding-left: 10px;   
+    }
+
+    #summary tbody tr{
+        background-color: #f7f7f7;
+    }
+    #summary thead{
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        border-color: silver;
+        font-size: 10pt;
+        font-weight: bold;
+        color: rgb(0,128,192);
+    }
+
+    table.example {
+        font-size: 10pt;
+        text-align: center;
+        font-family: Verdana,Arial,sans-serif;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .example td{
+        padding-right: 10px; 
+        padding-left: 10px;   
+    }
+
+    .example tbody tr{
+        background-color: #f7f7f7;
+		color: black;
+    }
+    .example thead{
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        border-color: silver;
+        font-size: 10pt;
+        font-weight: bold;
+        color: rgb(115,20,80);
+    }
+
+   .defaultIcon
+    {
+        background-image: url(img/navigation_folder-closed.gif) !important;
+        width: 13px;
+        height: 10px;
+    }
+    .selectedIcon
+    {
+        background-image: url(img/navigation_folder-open.gif) !important;
+        width: 13px;
+        height: 10px;
+    }
+
+    .ui-accordion .ui-accordion-header{
+        font-size: 10pt;
+        padding-top: 0em;
+        color: #7f7f7f;
+        font-weight: bold;
+		background-image: none;
+		background-color: #FFF;
+		border: 0;
+    }
+	
+	.pass.ui-accordion-header{    
+        color: green; 
+    }
+	
+	.fail.ui-accordion-header{    
+        color: rgb(230,0,0); 
+    }
+	
+	.pending.ui-accordion-header{    
+        color: rgb(155,155,0); 
+    }
+	
+    .step > .ui-accordion-header{
+        font-size: 10pt;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        color: #7f7f7f;
+        font-weight: normal;
+        border: 0;
+    }
+    .ui-accordion .ui-accordion-content { 
+        overflow:hidden !important; 
+        padding-top: 0px;
+		border-bottom: 0px;
+		border-left: 0px;
+    }
+	
+	
+    #header p{
+        font-size: 8pt;
+        color: #7f7f7f;
+        margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #accordion .ui-widget-content{
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+
+    }
+    .step .ui-icon { display: none; }
+    .step > .ui-accordion-header { padding-left: 0; margin-left: 0;}
+
+    .step.ui-accordion {
+        width:50%;
+        padding-left: 0px;
+    }
+
+    .step > .ui-accordion-content{
+        -moz-border-radius: 0px 0px 10px 10px;
+        -webkit-border-radius: 0px 0px 10px 10px;
+        -khtml-border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 10px;
+        padding: 3px 3px 3px 25px;
+        font-style: italic;
+        font-size: 8pt;
+    }
+
+    .step.pass > .ui-accordion-content{
+        background-color: rgb(182,255,185);
+        background-image : none;
+    }
+    .step.pass > .ui-accordion-header{
+        color: green;
+    }
+
+    .step.fail > .ui-accordion-content{
+        background-color: rgb(255,182,185);
+        background-image : none;
+    }
+    .step.fail > .ui-accordion-header{
+        color: rgb(230,0,0);
+    }
+
+    .step.pending > .ui-accordion-content{
+        background-color: rgb(255,255,185);
+        background-image : none;
+    }
+    .step.pending > .ui-accordion-header{
+        color: rgb(155,155,0);
+    }
+	
+
+    a {
+        text-decoration: none;
+        font-size: 8pt;   
+    }
+
+    a:hover{
+        color: grey;
+    }
+
+    .screenshot{
+        text-align: right;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .subsectionHeader{
+        color:rgb(0,128,192);
+        font-size:12pt;
+        margin-bottom:15px;
+        margin-left:30px;
+    }
+    .title{
+        color:rgb(0,128,192);
+        font-size:18pt;
+        margin-bottom:0px;
+        margin-left:30px;
+    }
+    .feature{
+        font-size: 10pt;        
+    }

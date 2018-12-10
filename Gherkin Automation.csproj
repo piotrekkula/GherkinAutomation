@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{400AB8A3-34C6-4822-9481-7C0C4A3B2734}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GherkinAutomation</RootNamespace>
+    <AssemblyName>GherkinAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Html2Xhtml">
+      <HintPath>packages\Html2Xhtml.1.1.2.4\lib\net40\Html2Xhtml.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>packages\SpecFlow.NUnit.Runners.1.0.0\..\NUnit.Runners.2.6.2\tools\lib\nunit.core.interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.36.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Selenium.WebDriver.2.36.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.36.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Selenium.Support.2.36.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_Features\CreateNewForm.feature.cs">
+      <DependentUpon>CreateNewForm.feature</DependentUpon>
+      <SubType>Code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="1_Features\FormVerification.feature.cs">
+      <DependentUpon>FormVerification.feature</DependentUpon>
+      <SubType>Code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="1_Features\SmokeTesting.feature.cs">
+      <DependentUpon>SmokeTesting.feature</DependentUpon>
+      <SubType>Code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="1_Features\CreateNewEvent.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateNewEvent.feature</DependentUpon>
+    </Compile>
+    <Compile Include="2_Steps\AppBaseSteps.cs" />
+    <Compile Include="2_Steps\CreateNewEvent.cs" />
+    <Compile Include="3_Pages\Event Pages\EventInformationSearchPageModel.cs" />
+    <Compile Include="3_Pages\Event Pages\HCPEventEditFormPageModel.cs" />
+    <Compile Include="Framework\Steps\BaseStepDefinitions.cs" />
+    <Compile Include="Framework\Steps\Events.cs" />
+    <Compile Include="2_Steps\CreateNewForm.cs" />
+    <Compile Include="2_Steps\FormVerificationSteps.cs" />
+    <Compile Include="2_Steps\SmokeTesting.cs" />
+    <Compile Include="Framework\Pages\BasePageModel.cs" />
+    <Compile Include="Framework\Pages\WebElementExtensions.cs" />
+    <Compile Include="Framework\ReportingNUnitExtension.cs" />
+    <Compile Include="Framework\Steps\Reporting.cs" />
+    <Compile Include="3_Pages\CommonToAll\SearchResultsPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\AddNewHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\HealthcareProfessionalDetailsPage\CreateNewHCPDetailsPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\HealthcareProfessionalDetailsPage\HealthcareProfessionalDetailsPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\mHCP\AddNewmHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\mHCP\ViewmHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\NameLookupPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\NewHCPEngagementPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\NotesAndAttachmentsPage\AttachFileToFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\NotesAndAttachmentsPage\EditNotePageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\sHCP\AddNewsHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\sHCP\ViewsHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\SupportingRolesPage\AddSupportingRolePageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\uHCP\AddNewuHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\uHCP\ViewuHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\FormsPages\ViewHCPFormPageModel.cs" />
+    <Compile Include="3_Pages\HelperClasses\Interfaces.cs" />
+    <Compile Include="3_Pages\HelperClasses\ScreenShotRemoteWebDriver.cs" />
+    <Compile Include="3_Pages\HomePage\IHCPHomeBasePageModel.cs" />
+    <Compile Include="3_Pages\LoginPage\LoginPageModel.cs" />
+    <Compile Include="3_Pages\PageModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="3_Pages\HelperClasses\SpecFlowNUnitExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1_Features\CreateNewForm.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CreateNewForm.feature.cs</LastGenOutput>
+    </None>
+    <None Include="1_Features\FormVerification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FormVerification.feature.cs</LastGenOutput>
+    </None>
+    <None Include="1_Features\SmokeTesting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SmokeTesting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="1_Features\CreateNewEvent.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CreateNewEvent.feature.cs</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Framework\contrib\GetDependencies.ps1" />
+    <None Include="Framework\README.md" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IEDriverServer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProjectFiles\AttachMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
